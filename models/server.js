@@ -6,7 +6,7 @@ class Server {
   //La propiedades se declaran en los constr d las clases
   constructor() {
     this.app = express()
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 3000;
 
     this.userPath = '/api/users';
 
